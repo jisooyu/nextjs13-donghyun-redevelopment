@@ -4,8 +4,8 @@ import Nav from "@/components/Nav";
 import Provider from "@/components/Provider";
 
 export const metadata = {
-  title: "Promptopia",
-  description: "Discover & Share AI Prompts",
+  title: "동현아파트재건축",
+  description: "재건축 뉴스/정보 사이트",
 };
 
 const RootLayout = ({ children }) => (

@@ -25,7 +25,7 @@ const UserProfile = ({ params }) => {
   return (
     <Profile
       name={userName}
-      desc={`Welcome to ${userName}'s personalized profile page. Explore ${userName}'s exceptional prompts and be inspired by the power of their imagination`}
+      desc={` ${userName}가 포스트한 뉴스라서 당신은 수정이나 삭제를 할  수 없습니다.`}
       data={userPosts}
     />
   );

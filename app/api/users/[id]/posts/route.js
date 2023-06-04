@@ -7,6 +7,7 @@ export const GET = async (request, {params}) => {
         const prompts = await Prompt.find({
             creator:params.id
         }).populate('creator')
+        
         return new Response(JSON.stringify(prompts), {
             status:200
         })

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { signIn, signOut, getProviders, useSession } from "next-auth/react";
 
-const Nav = () => {
+const Navbar = () => {
  const {data: session} = useSession() // change the name, data to session
 
   const [providers, setProviders] = useState(null);
@@ -29,7 +29,7 @@ const Nav = () => {
           height={30}
           className='object-contain'
         />
-        <p className='logo_text'>Promptopia</p>
+        <p className='logo_text'>동현아파트재건축</p>
       </Link>
 
       {/* Desktop Navigation */}
@@ -37,11 +37,11 @@ const Nav = () => {
         {session?.user ? (
           <div className='flex gap-3 md:gap-5'>
             <Link href='/create-prompt' className='black_btn'>
-              Create Post
+              뉴스생성
             </Link>
 
             <button type='button' onClick={signOut} className='outline_btn'>
-              Sign Out
+              로그아웃
             </button>
 
             <Link href='/profile'>
@@ -66,7 +66,7 @@ const Nav = () => {
                   }}
                   className='black_btn'
                 >
-                  Sign in
+                  로그인
                 </button>
               ))}
           </>
@@ -93,14 +93,14 @@ const Nav = () => {
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >
-                  My Profile
+                  프로파일
                 </Link>
                 <Link
                   href='/create-prompt'
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >
-                  Create Prompt
+                  뉴스생성
                 </Link>
                 <button
                   type='button'
@@ -110,7 +110,7 @@ const Nav = () => {
                   }}
                   className='mt-5 w-full black_btn'
                 >
-                  Sign Out
+                  로그아웃
                 </button>
               </div>
             )}
@@ -127,7 +127,7 @@ const Nav = () => {
                   }}
                   className='black_btn'
                 >
-                  Sign in
+                  로그인
                 </button>
               ))}
           </>
@@ -137,4 +137,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navbar;

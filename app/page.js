@@ -4,13 +4,12 @@ export default function Home() {
   return (
         <section className="w-full flex-center flex-col">
       <h1 className="head_text text-center">
-        Discover & Share
+        정보공유 사이트
         <br />
-        <span className="orange_gradient text-center">AI-Powered Prompts</span>
       </h1>
 
         <p className="desc text-center">
-          Propmptopia is an open-souce AI prompting tool for modern world to discover, create and share creative prompts
+          동현아파트 재건축 뉴스/정보 공유 사이트
       </p>
       <Feed />
    </section>
